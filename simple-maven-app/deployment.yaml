@@ -16,9 +16,9 @@ spec:
     spec:
       containers:
       - name: spring-boot-app
-        image: prasanth98/simple-maven-image:34
+        image: nginx
         ports:
-        - containerPort: 8080
+        - containerPort: 80
 ---
 apiVersion: v1
 kind: Service
