@@ -67,7 +67,7 @@ spec:
     spec:
       initContainers:
       - name: init-mysql
-        image: mysql:8.0.39
+        image: mysql:8.0.31
         command:
         - bash
         - "-c"
@@ -115,7 +115,7 @@ spec:
           mountPath: /etc/mysql/conf.d
       containers:
       - name: mysql
-        image: mysql:8.0.39
+        image: mysql:8.0.31
         env:
         - name: MYSQL_ALLOW_EMPTY_PASSWORD
           value: "1"
